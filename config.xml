@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.necc.nfcattsys" version="0.0.4" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<name>nfcattendencesystem</name>
+<description>
+NFC Card reading Attendence System
+</description>
+<author email="info@necc.com.hk" href="http://www.tndesign-studio.com">
+TN@NECC
+</author>
+<content src="index.html" />
+<access origin="*" />
+
+<uses-permission android:name="android.permission.NFC" />
+<uses-feature android:name="android.hardware.nfc" android:required="true" />
+<uses-sdk android:minSdkVersion="10" />
+
+<preference name="orientation" value="portrait" />
+<preference name="exit-on-suspend" value="true" />
+<preference name="splash-screen-duration" value="3000" />
+  <icon src="icon.png" />
+<gap:splash src="splash.png" />
+<gap:plugin name="phonegap-nfc" source="npm" />
+<gap:plugin name="org.apache.cordova.vibration" />
+</widget>
