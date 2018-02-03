@@ -1,5 +1,5 @@
 function readGPS() {
-	navigator.geolocation.getCurrentPosition(gpsSuccess, gpsError);
+//	navigator.geolocation.getCurrentPosition(gpsSuccess, gpsError);
 }
 
 // onSuccess Geolocation
