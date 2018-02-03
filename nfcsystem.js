@@ -10,8 +10,10 @@ function msgfail() {
 function tagidread1() {
 	alert("listener add callback");
 	}
-function tagidread() {
-	alert("tag id read");
+function tagidread(nfcEvent) {
+       var tag = nfcEvent.tag;
+       var tagId = nfc.bytesToHexString(tag.id);
+       alert("Tag read, ID: "+tagId);
 	}
 function onSuccess() {
 	alert("nfc listener added");
