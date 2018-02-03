@@ -1,9 +1,12 @@
-document.addEventListener("deviceready", onDeviceReady, false);
+document.addEventListener("deviceready", onDeviceReady, msgfail);
 function onDeviceReady() {
         // Now safe to use the PhoneGap API
 		alert("Check listener!");
 		readtagid();
 }
+function msgfail() {
+	alert("deviceready Fail");
+	}
 function tagidread1() {
 	alert("listener add callback");
 	}
