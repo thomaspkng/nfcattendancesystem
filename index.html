@@ -3,14 +3,30 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+<script type="text/javascript" src="phonegap.js"></script>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="nfcsystem.js"></script>
+<script type="text/javascript" src="gpssystem.js"></script>
 <script type="text/javascript" src="phonegap-nfc.js"></script>
 <script type="text/javascript" src="cordova.js"></script>
+<script>
+document.addEventListener("deviceready", onDeviceReady, msgfail);
+function onDeviceReady() {
+ 	// Now safe to use the PhoneGap API
+	alert("Device Ready!");
+	readNFC();
+	}
+function msgfail() {
+	alert("deviceready Fail");
+	}
+</script>
 <title>NFC Attendence System</title>
 </head>
 <body>
-NFC CHECKING<br/>
-trial - move js to root
+NFC Data::<br />
+TAG ID: <span id="nfctagid">waiting for tag.....</span>
+<br />
+GPS Data::<br />
+<span id="geolocation">Finding geolocation...</span>
 </body>
 </html>
