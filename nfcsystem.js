@@ -1,19 +1,12 @@
-document.addEventListener("deviceready", onDeviceReady, msgfail);
-function onDeviceReady() {
-        // Now safe to use the PhoneGap API
-		alert("Check listener!");
-		readtagid();
-}
-function msgfail() {
-	alert("deviceready Fail");
+function readNFC() {
+    // Now safe to use the PhoneGap API
+	readtagid();
 	}
 function tagidread1() {
 	alert("listener add callback");
 	}
-function tagidread(nfcEvent) {
-       var tag = nfcEvent.tag;
-       var tagId = nfc.bytesToHexString(tag.id);
-       alert("Tag read, ID: "+tagId);
+function tagidread() {
+	alert("tag id read");
 	}
 function onSuccess() {
 	alert("nfc listener added");
@@ -21,17 +14,9 @@ function onSuccess() {
 function onFailure(msg) {
 	alert(msg);
 	}
-function readtagid() {
-	alert("enter readtagid()");
-	nfc.addTagDiscoveredListener(tagidread, onSuccess, onFailure);
+function tagidread(nfcEvent) {
+	var tag = nfcEvent.tag;
+	var tagId = nfc.bytesToHexString(tag.id);
+	$("#nfctagid").html(tagid);
+//	alert("Tag read, ID: "+tagId);
 	}
-$(document).ready(function() {
-    //alert("doc ready");
-/*	
-	nfc.enabled(
-  function() {alert('yes!')},
-  // msg is one of NO_NFC (no hardware support) or NFC_DISABLED (supported but disabled)
-  function(msg) {alert(msg)}
-);
-*/
-});
