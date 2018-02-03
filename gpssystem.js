@@ -1,10 +1,10 @@
 function readGPS() {
-	navigator.geolocation.getCurrentPosition(onSuccess, onError);
+	navigator.geolocation.getCurrentPosition(gpsSuccess, gpsError);
 }
 
 // onSuccess Geolocation
 //
-function onSuccess(position) {
+function gpsSuccess(position) {
 	var element = document.getElementById('geolocation');
 	element.innerHTML = 'Latitude: '           + position.coords.latitude              + '<br />' +
 						'Longitude: '          + position.coords.longitude             + '<br />' +
@@ -18,7 +18,7 @@ function onSuccess(position) {
 
 // onError Callback receives a [PositionError](PositionError/positionError.html) object
 //
-function onError(error) {
+function gpsError(error) {
 	alert('code: '    + error.code    + '\n' +
 		  'message: ' + error.message + '\n');
 }
