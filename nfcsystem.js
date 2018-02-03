@@ -11,6 +11,6 @@ function onFailure(msg) {
 function tagidread(nfcEvent) {
 	var tag = nfcEvent.tag;
 	var tagId = nfc.bytesToHexString(tag.id);
-//	$("#nfctagid").html(tagid);
-	alert("Tag read, ID: "+tagId);
+	document.getElementById('nfctagid').innerHTML = tagId;
+//	alert("Tag read, ID: "+tagId);
 	}
