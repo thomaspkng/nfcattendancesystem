@@ -17,6 +17,6 @@ TN@NECC
 <icon src="icon.png" />
 <gap:splash src="splash.png" />
 <gap:plugin name="phonegap-nfc" source="npm" />
-<gap:plugin name="cordova-plugin-geolocation" source="npm" spec="2.4.3" />
-<gap:plugin name="cordova-plugin-device" />
+<plugin name="cordova-plugin-geolocation" source="npm" spec="2.4.3" />
+<plugin name="cordova-plugin-device" />
 </widget>
