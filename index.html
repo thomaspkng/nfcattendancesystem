@@ -18,6 +18,7 @@ function onDeviceReady() {
 	alert("Device Ready!");
 	inoutot();
 	readNFC();
+	readGPS();
 	}
 function msgfail() {
 	alert("deviceready Fail");
@@ -28,7 +29,7 @@ function msgfail() {
 <body>
 <div id="inoroutframe" class="inoroutframe">
   <div id="inorout" class="inorout">
-  	INOUTOT
+  	IN/OUT
   </div>
   <div class="btn_inout">
   	<input id="checkin" class="btn_io" type="button" name="checkin" value="IN" />
@@ -36,6 +37,8 @@ function msgfail() {
   	<input id="checkotout" class="btn_io" type="button" name="otout" value="OT-OUT" />
   </div>
 </div>
+Device DATA::<br />
+UUID: <span id="duuid">UUID.....</span>
 NFC Data::<br />
 TAG ID: <span id="nfctagid">waiting for tag.....</span>
 <br />
