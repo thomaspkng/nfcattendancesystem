@@ -3,7 +3,7 @@ function readNFC() {
 	nfc.addTagDiscoveredListener(tagidread, onSuccess, onFailure);
 	}
 function onSuccess() {
-	alert("nfc listener added");
+//	alert("nfc listener added");
 	}
 function onFailure(msg) {
 	alert("cannot add listener!\n"+msg);
