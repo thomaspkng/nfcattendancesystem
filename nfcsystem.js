@@ -14,5 +14,6 @@ function tagidread(nfcEvent) {
 	var tagId = nfc.bytesToHexString(tag.id);
 	$("#s_tagid").val(tagId);
 	document.getElementById('nfctagid').innerHTML = "Tag Read!";
+	tag2server();
 //	alert("Tag read, ID: "+tagId);
 	}
