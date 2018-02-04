@@ -23,5 +23,4 @@ TN@NECC
 </rim:permissions>
 <gap:splash src="splash.png" />
 <gap:plugin name="phonegap-nfc" source="npm" />
-<gap:plugin name="org.apache.cordova.vibration" />
 </widget>
