@@ -1,14 +1,14 @@
 @charset "utf-8";
 /* CSS Document */
 body {
-	background-color: #FFFFCC;
+	background-color: #777777;
 }
 div.inoroutframe {
 	padding: 20px;
 }
 div.inorout {
-	background-color: #DDFFFF;
-	border: solid 5px #3300FF;
+	background-color: #8899AA;
+	border: solid 5px #3300AA;
 	border-radius: 15px;
 	font-size: 72px;
 	text-align: center;
@@ -26,7 +26,7 @@ div.loggerinfo {
 	margin: auto;
 }
 .btn_io {
-	background-color: #DDDDFF;
+	background-color: #AAAABB;
 	border: 1px solid black;
 	text-align: center;
 	font-size: 18px;
@@ -39,7 +39,7 @@ table.cardholder {
 	border: 2px solid black;
 	alignment-adjust: middle central;
 	width: 350px;
-	background-color: #AAAAEE;
+	background-color: #7777BB;
 }
 td.cardholderinfo {
 	border: 1px solid black;
