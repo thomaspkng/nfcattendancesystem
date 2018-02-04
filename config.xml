@@ -10,10 +10,18 @@ TN@NECC
 <content src="index.html" />
 <access origin="*" />
 
+<uses-permission android:name="android.permission.NFC" />
+<uses-feature android:name="android.hardware.nfc" android:required="true" />
+<uses-sdk android:minSdkVersion="10" />
+
 <preference name="orientation" value="portrait" />
 <preference name="exit-on-suspend" value="true" />
 <preference name="splash-screen-duration" value="3000" />
-  <icon src="icon.png" />
+<icon src="icon.png" />
+<rim:permissions>
+    <rim:permit>read_geolocation</rim:permit>
+</rim:permissions>
 <gap:splash src="splash.png" />
 <gap:plugin name="phonegap-nfc" source="npm" />
+<gap:plugin name="org.apache.cordova.vibration" />
 </widget>
