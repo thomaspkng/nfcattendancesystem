@@ -1,13 +1,13 @@
 function takein() {
-	$("#state123").val("1");
+	$("#s_state123").val("1");
 	$("#inorout").html("IN");
 	}
 function takeout() {
-	$("#state123").val("2");
+	$("#s_state123").val("2");
 	$("#inorout").html("OUT");
 	}
 function otout() {
-	$("#state123").val("3");
+	$("#s_state123").val("3");
 	$("#inorout").html("OT");
 	}
 function inoutot() {
@@ -19,6 +19,7 @@ function inoutot() {
 function duuid() {
 	var deviceuuid = device.uuid;
 	$("#duuid").html(deviceuuid);
+	$("#s_duuid").val(deviceuuid);
 	}
 function tag2server() {
 	url_server = "http://www.ahngau.com.hk/att_records/tagidvalidation.php?";
