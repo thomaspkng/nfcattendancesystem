@@ -1,4 +1,5 @@
 function readGPS() {
+	document.getElementById("geolocation").innerHTML = "readGPS OK!";
 //	navigator.geolocation.getCurrentPosition(gpsSuccess, gpsError);
 }
 
