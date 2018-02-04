@@ -13,14 +13,14 @@ TN@NECC
 <uses-permission android:name="android.permission.NFC" />
 <uses-feature android:name="android.hardware.nfc" android:required="true" />
 <uses-sdk android:minSdkVersion="10" />
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
 
 <preference name="orientation" value="portrait" />
 <preference name="exit-on-suspend" value="true" />
 <preference name="splash-screen-duration" value="3000" />
 <icon src="icon.png" />
-<rim:permissions>
-    <rim:permit>read_geolocation</rim:permit>
-</rim:permissions>
 <gap:splash src="splash.png" />
 <gap:plugin name="phonegap-nfc" source="npm" />
 </widget>
