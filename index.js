@@ -1,25 +1,21 @@
-function ready() {
+function takein() {
+	$("#state123").val("1");
+	$("#inorout").html("IN");
+	}
 
-    function onNfc(nfcEvent) {
+function takeout() {
+	$("#state123").val("2");
+	$("#inorout").html("OUT");
+	}
 
-        var tag = nfcEvent.tag;
-        var tagId = nfc.bytesToHexString(tag.id);
-        alert(tagId);
+function otout() {
+	$("#state123").val("3");
+	$("#inorout").html("OT");
+	}
 
-    }
-
-    function win() {
-        console.log("Listening for NFC Tags");
-    }
-
-    function fail(error) {
-        alert("Error adding NFC listener");
-    }
-
-
-    nfc.addTagDiscoveredListener(onNfc, win, fail);
-}
-
-function init() {
-    document.addEventListener('deviceready', ready, false);
-}
+function inoutot() {
+	alert("inoutot, OK");
+	$("#checkin").click(takein);
+	$("#checkout").click(takeout);
+	$("#checkotout").click(otout);
+	}
