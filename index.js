@@ -21,6 +21,7 @@ function duuid() {
 	$("#duuid").html(deviceuuid);
 	}
 function tag2server() {
+	alert("tag > server");
 	url_server = "http://www.ahngau.com.hk/att_records/tagidvalidation.php?";
 	qs_1 = "duuid="+$("#s_duuid").val();
 	qs_2 = "tagid="+$("#s_tagid").val();
