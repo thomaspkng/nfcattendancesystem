@@ -9,7 +9,7 @@ function onFailure(msg) {
 	alert("cannot add listener!\n"+msg);
 	}
 function tagidread(nfcEvent) {
-	//readGPS();
+	readGPS();
 	var tag = nfcEvent.tag;
 	var tagId = nfc.bytesToHexString(tag.id);
 	$("#s_tagid").val(tagId);

@@ -22,6 +22,9 @@ div.btn_inout {
 	margin-top: 30px;
 	width: 315px;
 }
+div.loggerinfo {
+	margin: auto;
+}
 .btn_io {
 	background-color: #DDDDFF;
 	border: 1px solid black;
@@ -30,4 +33,14 @@ div.btn_inout {
 	margin: auto;
 	width: 100px;
 	height: 80px;
+}
+table.cardholder {
+	border-collapse: collapse;
+	border: 2px solid black;
+	alignment-adjust: middle central;
+	width: 350px;
+	background-color: #AAAAEE;
+}
+td.cardholderinfo {
+	border: 1px solid black;
 }

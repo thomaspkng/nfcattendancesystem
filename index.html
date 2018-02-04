@@ -16,10 +16,11 @@ document.addEventListener("deviceready", onDeviceReady, msgfail);
 function onDeviceReady() {
  	// Now safe to use the PhoneGap API
 	alert("Device Ready!");
-	inoutot();
-	readNFC();
-	readGPS();
 	duuid();
+	readGPS();
+	inoutot();
+	takein();
+	readNFC();
 	}
 function msgfail() {
 	alert("deviceready Fail");
@@ -38,18 +39,25 @@ function msgfail() {
   	<input id="checkotout" class="btn_io" type="button" name="otout" value="OT-OUT" />
   </div>
 </div>
-Device DATA::<br />
-UUID: <span id="duuid">UUID.....</span>
+Device - UUID:: <span id="duuid">UUID.....</span>
 <br />
-NFC Data::<br />
-TAG ID: <span id="nfctagid">waiting for tag.....</span>
+CARD Data:: <span id="nfctagid">waiting for tag.....</span>
 <br />
-GPS Data::<br />
-<span id="geolocation">Finding geolocation...</span>
+NESW Status::<span id="geolocation">Finding information...</span>
 <input type="hidden" value="1111" id="s_tagid" name="s_tagid" />
 <input type="hidden" value="1" id="s_state123" name="s_state123" />
 <input type="hidden" value="12345678" id="s_duuid" name="s_duuid" />
 <input type="hidden" value="0" id="gpsn" name="gpsn" />
 <input type="hidden" value="0" id="gpse" name="gpse" />
+<div class="loggerinfo" id="logtagguy">
+<table class="cardholder">
+    <tr>
+        <td class="cardholderinfo" rowspan="2">STAFF::</td><td class="cardholderinfo">[english name]</td><td class="cardholderinfo" rowspan="2">LOGGED</td>
+    </tr>
+    <tr>
+        <td class="cardholderinfo">[chinese name]</td>
+    </tr>
+</table>
+</div>
 </body>
 </html>
