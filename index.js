@@ -29,7 +29,7 @@ function tag2server() {
 	qs_4 = "gpse="+$("#gpse").val();
 	qs_5 = "state123="+$("#s_state123").val();
 	url2go = url_server + qs_1 + "&" + qs_2 + "&" + qs_3 + "&" + qs_4 + "&" + qs_5;
-	alert(url2go);
+//	alert(url2go);
 	var xhttp = new XMLHttpRequest();
 	xhttp.onreadystatechange = function() {
 		if (this.readyState == 4 && this.status == 200) {
