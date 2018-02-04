@@ -13,12 +13,9 @@ TN@NECC
 <preference name="orientation" value="portrait" />
 <preference name="exit-on-suspend" value="true" />
 <preference name="splash-screen-duration" value="3000" />
-
-<uses-permission name="android.permission.ACCESS_COARSE_LOCATION" />
-<uses-permission name="android.permission.ACCESS_FINE_LOCATION" />
-<uses-permission name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
-  
+ 
 <icon src="icon.png" />
 <gap:splash src="splash.png" />
 <gap:plugin name="phonegap-nfc" source="npm" />
+<gap:plugin name="cordova-plugin-geolocation" source="npm" />
 </widget>
