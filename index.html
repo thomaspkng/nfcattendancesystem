@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="css/pagestyle.css" />
 <meta charset="utf-8">
 <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
 <script type="text/javascript" src="phonegap.js"></script>
@@ -8,14 +9,15 @@
 <script type="text/javascript" src="nfcsystem.js"></script>
 <script type="text/javascript" src="gpssystem.js"></script>
 <script type="text/javascript" src="phonegap-nfc.js"></script>
+<script type="text/javascript" src="index.js"></script>
 <script type="text/javascript" src="cordova.js"></script>
 <script type="text/javascript">
 document.addEventListener("deviceready", onDeviceReady, msgfail);
 function onDeviceReady() {
  	// Now safe to use the PhoneGap API
 	alert("Device Ready!");
-	readNFC();
-	readGPS();
+	inoutot();
+	//readNFC();
 	}
 function msgfail() {
 	alert("deviceready Fail");
@@ -24,10 +26,21 @@ function msgfail() {
 <title>NFC Attendence System</title>
 </head>
 <body>
+<div id="inoroutframe" class="inoroutframe">
+  <div id="inorout" class="inorout">
+  	INOUTOT
+  </div>
+  <div class="btn_inout">
+  	<input id="checkin" class="btn_io" type="button" name="checkin" value="IN" />
+  	<input id="checkout" class="btn_io" type="button" name="checkout" value="OUT" />
+  	<input id="checkotout" class="btn_io" type="button" name="otout" value="OT-OUT" />
+  </div>
+</div>
 NFC Data::<br />
 TAG ID: <span id="nfctagid">waiting for tag.....</span>
 <br />
 GPS Data::<br />
 <span id="geolocation">Finding geolocation...</span>
+<input type="hidden" value="1" id="state123" />
 </body>
 </html>
