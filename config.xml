@@ -9,6 +9,9 @@ TN@NECC
 </author>
 <content src="index.html" />
 <access origin="*" />
+<allow-navigation href="*" />
+<allow-intent href="http://*/*" />
+<allow-intent href="https://*/*" />
 
 <preference name="orientation" value="portrait" />
 <preference name="exit-on-suspend" value="true" />
@@ -19,4 +22,5 @@ TN@NECC
 <gap:plugin name="phonegap-nfc" source="npm" />
 <plugin name="cordova-plugin-geolocation" source="npm" spec="2.4.3" />
 <plugin name="cordova-plugin-device" />
+<plugin name="cordova-plugin-whitelist" spec="1" />
 </widget>
