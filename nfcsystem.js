@@ -9,6 +9,7 @@ function onFailure(msg) {
 	alert(msg);
 	}
 function tagidread(nfcEvent) {
+	readGPS();
 	var tag = nfcEvent.tag;
 	var tagId = nfc.bytesToHexString(tag.id);
 	document.getElementById('nfctagid').innerHTML = tagId;
