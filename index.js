@@ -20,3 +20,6 @@ function duuid() {
 	var deviceuuid = device.uuid;
 	$("#duuid").html(deviceuuid);
 	}
+function tag2server() {
+	
+	}

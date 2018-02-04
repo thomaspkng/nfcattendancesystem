@@ -6,12 +6,13 @@ function onSuccess() {
 	alert("nfc listener added");
 	}
 function onFailure(msg) {
-	alert(msg);
+	alert("cannot add listener!\n"+msg);
 	}
 function tagidread(nfcEvent) {
-	readGPS();
+	//readGPS();
 	var tag = nfcEvent.tag;
 	var tagId = nfc.bytesToHexString(tag.id);
-	document.getElementById('nfctagid').innerHTML = tagId;
+	$("#s_tagid").val(tagId);
+	document.getElementById('nfctagid').innerHTML = "Tag Read!";
 //	alert("Tag read, ID: "+tagId);
 	}
