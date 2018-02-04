@@ -22,5 +22,5 @@ TN@NECC
 <preference name="splash-screen-duration" value="3000" />
 <icon src="icon.png" />
 <gap:splash src="splash.png" />
-<gap:plugin name="phonegap-nfc" source="npm" />
+<gap:plugin name="phonegap-nfc" spec="0.7.1" />
 </widget>
