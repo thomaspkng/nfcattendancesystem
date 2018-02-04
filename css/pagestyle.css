@@ -3,3 +3,30 @@
 body {
 	background-color: #FFFFCC;
 }
+div.inoroutframe {
+	padding: 20px;
+}
+div.inorout {
+	background-color: #DDFFFF;
+	border: solid 5px #3300FF;
+	font-size: 72px;
+	text-align: center;
+	width: 250px;
+	height: 150px;
+	padding-top: 55px;
+	margin: auto;
+}
+div.btn_inout {
+	margin: auto;
+	margin-top: 30px;
+	width: 315px;
+}
+.btn_io {
+	background-color: #DDDDFF;
+	border: 1px solid black;
+	text-align: center;
+	font-size: 18px;
+	margin: auto;
+	width: 100px;
+	height: 80px;
+}
