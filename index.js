@@ -1,3 +1,6 @@
+function quitapp() {
+	navigator.app.exitApp();
+	}
 function takein() {
 	$("#s_state123").val("1");
 	$("#inorout").html("IN");
