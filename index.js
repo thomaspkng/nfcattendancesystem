@@ -17,12 +17,12 @@ function noononstop() {
 	$("#s_state123").val("4");
 	$("#inorout").html("Noon<br />中直");
 	}
-function inoutot() {
-//	alert("inoutot, OK");
+function inoutotnoonquit() {
 	$("#checkin").click(takein);
 	$("#checkout").click(takeout);
 	$("#checkotout").click(otout);
 	$("#noononstop").click(noononstop);
+	$("#quitapp").click(quitapp);
 	}
 function duuid() {
 	var deviceuuid = device.uuid;
