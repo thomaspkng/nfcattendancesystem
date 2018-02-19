@@ -29,9 +29,9 @@ div.loggerinfo {
 	background-color: #AAAABB;
 	border: 1px solid black;
 	text-align: center;
-	font-size: 18px;
+	font-size: 14px;
 	margin: auto;
-	width: 100px;
+	width: 75px;
 	height: 80px;
 }
 table.cardholder {
@@ -41,6 +41,12 @@ table.cardholder {
 	width: 350px;
 	background-color: #7777BB;
 }
+td.cardholdertag {
+	border: 1px solid black;
+	font-size: 12px;
+	text-align: center;
+}
 td.cardholderinfo {
 	border: 1px solid black;
+	font-size: 20px;
 }
