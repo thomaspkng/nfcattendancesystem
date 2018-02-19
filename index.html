@@ -29,21 +29,23 @@ function msgfail() {
 <title>NFC Attendence System</title>
 </head>
 <body>
+<input type="button" id="quitapp" value="QUIT" />
 <div id="inoroutframe" class="inoroutframe">
   <div id="inorout" class="inorout">
   	IN/OUT
   </div>
   <div class="btn_inout">
-  	<input id="checkin" class="btn_io" type="button" name="checkin" value="IN" />
-  	<input id="checkout" class="btn_io" type="button" name="checkout" value="OUT" />
-  	<input id="checkotout" class="btn_io" type="button" name="otout" value="OT-OUT" />
+  	<button id="checkin" class="btn_io" type="button" name="checkin">IN<br />上班</button>
+  	<button id="checkout" class="btn_io" type="button" name="checkout">OUT<br />下班</button>
+  	<button id="checkotout" class="btn_io" type="button" name="otout">OT-OUT<br />超時下班</button>
+  	<button id="noononstop" class="btn_io" type="button" name="noononstop">Noon<br />中直</button>
   </div>
 </div>
 Device - UUID:: <span id="duuid">UUID.....</span>
 <br />
 CARD Data:: <span id="nfctagid">waiting for tag.....</span>
 <br />
-NESW Status::<span id="geolocation">Finding information...</span>
+NESW Status::<span id="geolocation">Finding information...</span><br /><br /><br />
 <input type="hidden" value="1111" id="s_tagid" name="s_tagid" />
 <input type="hidden" value="1" id="s_state123" name="s_state123" />
 <input type="hidden" value="12345678" id="s_duuid" name="s_duuid" />
@@ -52,7 +54,7 @@ NESW Status::<span id="geolocation">Finding information...</span>
 <div class="loggerinfo" id="logtagguy">
 <table class="cardholder">
     <tr>
-        <td class="cardholderinfo" rowspan="2">STAFF::</td><td class="cardholderinfo">[english name]</td><td class="cardholderinfo" rowspan="2">LOGGED</td>
+        <td class="cardholdertag" rowspan="2">STAFF::</td><td class="cardholderinfo">[english name]</td><td class="cardholdertag" rowspan="2">LOGGED</td>
     </tr>
     <tr>
         <td class="cardholderinfo">[chinese name]</td>
